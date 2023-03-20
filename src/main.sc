@@ -11,16 +11,16 @@ theme: /
         a: Привет!
         
     state: Weather
-        intent!: /weather
-        a: Sunny weather for today!
+        q!: *~погода*
+        a: Сегодня солнечно
         
     state: Currency
-        intent!: /currency
-        a: 1 rub = 60$
+        q!: *~валют*
+        a: 60 долларов = 1 рубль
         
 
     state: Bye
-        intent!: /пока
+        q!: пока
         a: Пока пока
 
     state: NoMatch
