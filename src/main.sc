@@ -8,17 +8,16 @@ theme: /
 
     state: Hello
         intent!: /hello
-        a: Привет!
+        a: hellow and welcome
         
-    state: Weather
+    state: weather
         q!: *~погода*
         a: Сегодня солнечно
-        
-    state: Currency
-        q!: *~валют*
-        a: 60 долларов = 1 рубль
-        
 
+    state: currency
+        q!: *~валют*
+        a: Мда ну и курс
+        
     state: Bye
         q!: пока
         a: Пока пока
@@ -26,7 +25,7 @@ theme: /
     state: NoMatch
         event!: noMatch
         a: Sorry, don't understand you. You said: {{$request.query}}
-
+        
     state: Match
         event!: match
         a: {{$context.intent.answer}}
